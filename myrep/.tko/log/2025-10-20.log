@@ -1,0 +1,37 @@
+2025-10-20 07:38:45, MOVE, v:1, k:poo@chinela, mode:DOWN
+2025-10-20 08:10:48, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 08:10:50, EXEC, v:1, k:poo@chinela, mode:FREE, size:29
+2025-10-20 08:21:48, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-20 08:21:49, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 08:21:49, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-20 08:22:12, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 08:22:15, EXEC, v:1, k:poo@chinela, mode:FREE, size:29
+2025-10-20 08:22:22, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-20 08:22:32, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-20 08:22:34, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 08:34:47, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100, size:18
+2025-10-20 08:34:50, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-20 08:34:51, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 08:38:24, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:28
+2025-10-20 08:45:38, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:28
+2025-10-20 08:45:46, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-20 08:45:47, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 08:45:48, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-20 08:45:51, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-20 08:46:10, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:28
+2025-10-20 08:53:06, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:27
+2025-10-20 08:53:15, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-20 08:53:23, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-20 08:53:37, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-20 08:54:28, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:24
+2025-10-20 08:54:33, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-20 08:54:34, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-20 08:54:37, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-20 08:54:56, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:24
+2025-10-20 08:54:59, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-20 08:55:12, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-20 08:55:26, SELF, v:1, k:poo@chinela
+2025-10-20 08:55:32, SELF, v:1, k:poo@camisa
+2025-10-20 08:56:54, SELF, v:1, k:poo@chinela, rate:100, iagen:Black_box_AI, alone:9, study:74
+2025-10-20 08:56:59, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-20 08:57:02, MOVE, v:1, k:poo@chinela, mode:BACK

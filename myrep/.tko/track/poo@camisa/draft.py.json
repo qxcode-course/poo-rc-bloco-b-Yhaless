@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-20_09-13-55",
+            "content": "@@ -59,67 +59,13 @@\n o = \n-%22%22%0A%0A    def getTamanho(self):%0A        return self.__tamanho\n+str()\n %0A%0A  \n@@ -279,216 +279,4 @@\n G%22)%0A\n-%0Aroupa = Roupa()%0A%0Awhile roupa.getTamanho() == %22%22:%0A    print(%22Digite seu tamanho de roupa%22)%0A    tamanho = input()%0A    roupa.setTamanho(tamanho)%0Aprint(%22Parabens, voc%C3%AA comprou uma roupa tamanho%22, roupa.getTamanho())\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-20_09-21-12",
+            "content": "@@ -438,20 +438,15 @@\n o = \n-str(\n input()\n-)\n %0A   \n@@ -472,17 +472,16 @@\n amanho)%0A\n-%0A\n print(%22P\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-20_09-23-22",
+            "content": "@@ -1,19 +1,18 @@\n class \n-Camis\n+Roup\n a:%0A    d\n@@ -58,14 +58,8 @@\n ho =\n- str =\n  %22%22%0A\n@@ -87,15 +87,8 @@\n elf)\n- -%3E str\n :%0A  \n@@ -334,22 +334,20 @@\n %22)%0A%0A\n-camisa = Camis\n+roupa = Roup\n a()%0A\n@@ -353,21 +353,20 @@\n %0A%0Awhile \n-camis\n+roup\n a.getTam\n@@ -412,21 +412,20 @@\n anho de \n-camis\n+roup\n a%22)%0A    \n@@ -438,25 +438,29 @@\n o = \n+str(\n input()\n+)\n %0A    \n-camis\n+roup\n a.se\n@@ -512,21 +512,20 @@\n rou uma \n-camis\n+roup\n a tamanh\n@@ -532,13 +532,12 @@\n o%22, \n-camis\n+roup\n a.ge\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_09-27-17",
+            "content": "@@ -303,14 +303,8 @@\n nt(%22\n-Erro: \n O ta\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_09-27-59",
+            "content": "@@ -176,20 +176,16 @@\n         \n-    \n if valor\n@@ -239,28 +239,24 @@\n             \n-    \n self.__taman\n@@ -278,22 +278,14 @@\n     \n-    \n else:%0A\n-    \n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_09-29-45",
+            "content": "@@ -272,18 +272,13 @@\n o = \n-f%22%7B\n valor\n-%7D%22\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_09-31-19",
+            "content": "@@ -53,17 +53,18 @@\n _tamanho\n-:\n+ =\n  str = %22\n@@ -268,21 +268,26 @@\n manho = \n+f%22%7B\n valor\n+%7D%22\n %0A       \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_09-35-28",
+            "content": "@@ -57,14 +57,19 @@\n anho\n+: str\n  = %22%22%0A\n-\n %0A   \n@@ -175,16 +175,20 @@\n         \n+    \n if valor\n@@ -192,46 +192,58 @@\n lor \n-in %5B\n+== \n %22PP%22\n-,\n+ or\n  %22P%22\n-,\n+ or\n  %22M%22\n-,\n+ or\n  %22G%22\n-,\n+ or\n  %22GG%22\n-,\n+ or\n  %22XG%22\n-%5D\n :%0A\n+    \n     \n@@ -285,14 +285,22 @@\n     \n+    \n else:%0A\n+    \n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-20_09-39-05",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if valor in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanho = valor\n        else:\n            print(\"Erro: O tamanho deve ser; PP, P, M, G, GG ou XG\")\n\ncamisa = Camisa()\n\nwhile camisa.getTamanho() == \"\":\n    print(\"Digite seu tamanho de camisa\")\n    tamanho = input()\n    camisa.setTamanho(tamanho)\n\nprint(\"Parabens, voc\u00ea comprou uma camisa tamanho\", camisa.getTamanho())",
+            "lines": "21"
+        }
+    ]
+}

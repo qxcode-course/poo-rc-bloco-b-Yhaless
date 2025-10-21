@@ -1,0 +1,214 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-20_10-53-24",
+            "content": "@@ -656,22 +656,16 @@\n         \n-print(\n show(rou\n@@ -667,9 +667,8 @@\n w(roupa)\n-)\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-21_08-36-39",
+            "content": "@@ -349,143 +349,184 @@\n def \n-main():%0A    roupa = roupa%0A%0A    while True:%0A        comando = input()%0A%0A        if comando == %22show%22:%0A            tamanho_atual =\n+show(roupa):%0A    tamanho = roupa.getTamanho()%0A    if tamanho == %22%22:%0A        print(%22size: ()%22)%0A    else:%0A        print(f%22size: (%7Btamanho%7D)%22)%0A%0Adef size(roupa, valor):%0A   \n  roupa.\n-g\n+s\n etTa\n@@ -535,100 +535,121 @@\n nho(\n-)%0A            if tamanho_atual == %22%22:%0A                print(%22size: ()%22)%0A            else:%0A  \n+valor)%0A%0A%0Adef main():%0A    roupa = roupa%0A%0A    while True:%0A        comando = input()%0A%0A        if comando == %22show%22:%0A\n     \n@@ -660,49 +660,22 @@\n     \n-  \n print(\n-f%22size: (%7Btamanho_atual%7D)%22)%0A%0A        \n+show(roupa))\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-21_15-05-05",
+            "content": "@@ -369,15 +369,13 @@\n a = \n-R\n+r\n oupa\n-()\n %0A%0A  \n@@ -643,24 +643,4 @@\n     \n-if comando == %22size%22\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-21_15-18-03",
+            "content": "@@ -633,34 +633,32 @@\n al%7D)%22)%0A%0A        \n-el\n if comando.start\n@@ -655,184 +655,14 @@\n ando\n-.startswith(%22size %22):%0A            partes = comando.split(%22 %22, 1)%0A            valor = partes%5B1%5D%0A            roupa.setTamanho(valor)%0A%0A        elif comando == %22end%22:%0A            break\n+ == %22size%22\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-21_15-28-17",
+            "content": "@@ -419,14 +419,8 @@\n ut()\n-.strip\n %0A%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-21_15-29-29",
+            "content": "@@ -418,30 +418,15 @@\n put(\n-%22Digite um comando: %22)\n+).strip\n %0A%0A  \n@@ -639,32 +639,34 @@\n al%7D)%22)%0A%0A        \n+el\n if comando.start\n@@ -791,32 +791,34 @@\n valor)%0A%0A        \n+el\n if comando == %22e\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-21_15-31-53",
+            "content": "@@ -414,16 +414,37 @@\n = input(\n+%22Digite um comando: %22\n )%0A%0A     \n@@ -496,17 +496,17 @@\n atual = \n-R\n+r\n oupa.get\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-21_15-36-01",
+            "content": "@@ -61,54 +61,8 @@\n = %22%22\n-  # Inicializa o tamanho como uma string vazia\n %0A%0A  \n@@ -125,36 +125,13 @@\n anho\n+%0A\n   \n-# Retorna o tamanho atual%0A\n+  \n %0A   \n@@ -169,69 +169,8 @@\n r):%0A\n-        # Verifica se o valor est%C3%A1 entre os tamanhos v%C3%A1lidos%0A\n     \n@@ -218,44 +218,13 @@\n %22, %22\n-X\n G\n+X\n %22%5D:\n-  # Corrigido de %22GX%22 para %22XG%22\n %0A   \n@@ -258,90 +258,8 @@\n alor\n-  # Define o tamanho%0A            print(f%22Tamanho definido como: %7Bself.__tamanho%7D%22)\n %0A   \n@@ -339,36 +339,16 @@\n  ou XG%22)\n-  # Mensagem de erro\n %0A%0Adef ma\n@@ -376,408 +376,51 @@\n pa()\n-  # Cria um objeto da classe Roupa%0A%0A    print(%22Bem-vindo ao simulador de Roupa!%22)%0A    print(%22Digite 'show' para ver o tamanho atual.%22)%0A    print(%22Digite 'size %3Ctamanho%3E' para definir o tamanho (ex: size M).%22)%0A    print(%22Digite 'end' para sair do programa.%22)%0A%0A    while True:  # Loop infinito at%C3%A9 o usu%C3%A1rio decidir sair%0A        comando = input(%22Digite um comando: %22).strip()  # L%C3%AA o comando do usu%C3%A1rio\n+%0A%0A    while True:%0A        comando = input()\n %0A%0A  \n@@ -450,35 +450,8 @@\n ow%22:\n-  # Se o comando for 'show'\n %0A   \n@@ -475,17 +475,17 @@\n atual = \n-r\n+R\n oupa.get\n@@ -497,33 +497,8 @@\n ho()\n-  # Obt%C3%A9m o tamanho atual\n %0A   \n@@ -567,42 +567,8 @@\n ()%22)\n-  # Se n%C3%A3o houver tamanho definido\n %0A   \n@@ -635,34 +635,8 @@\n %7D)%22)\n-  # Mostra o tamanho atual\n %0A%0A  \n@@ -633,34 +633,32 @@\n al%7D)%22)%0A%0A        \n-el\n if comando.start\n@@ -676,44 +676,8 @@\n  %22):\n-  # Se o comando come%C3%A7ar com 'size '\n %0A   \n@@ -719,744 +719,118 @@\n , 1)\n-  # Divide o comando em partes%0A            if len(partes) == 2:  # Se houver um tamanho definido%0A                valor = partes%5B1%5D  # Pega o tamanho%0A                roupa.setTamanho(valor)  # Tenta definir o tamanho%0A            else:%0A                print(%22Erro: Use 'size %3Ctamanho%3E' (ex: size M).%22)  # Mensagem de erro%0A%0A        elif comando == %22end%22:  # Se o comando for 'end'%0A            print(%22Saindo do programa. At%C3%A9 logo!%22)  # Mensagem de sa%C3%ADda%0A            break  # Sai do loop%0A%0A        else:  # Para qualquer outro comando inv%C3%A1lido%0A            print(%22Comando inv%C3%A1lido. Tente 'show', 'size %3Ctamanho%3E' ou 'end'.%22)  # Mensagem de erro%0A%0A# Executa a fun%C3%A7%C3%A3o main se o arquivo for executado diretamente%0Aif __name__ == %22__main__%22:%0A    main()%0A\n+%0A            valor = partes%5B1%5D%0A            roupa.setTamanho(valor)%0A%0A        if comando == %22end%22:%0A            break\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-21_15-40-21",
+            "content": "@@ -57,16 +57,62 @@\n nho = %22%22\n+  # Inicializa o tamanho como uma string vazia\n %0A%0A    de\n@@ -167,16 +167,43 @@\n _tamanho\n+  # Retorna o tamanho atual\n %0A%0A    de\n@@ -234,16 +234,77 @@\n : str):%0A\n+        # Verifica se o valor est%C3%A1 entre os tamanhos v%C3%A1lidos%0A\n         \n@@ -349,16 +349,47 @@\n , %22XG%22%5D:\n+  # Corrigido de %22GX%22 para %22XG%22\n %0A       \n@@ -415,16 +415,36 @@\n  = valor\n+  # Define o tamanho\n %0A       \n@@ -582,16 +582,36 @@\n  ou XG%22)\n+  # Mensagem de erro\n %0A%0Adef ma\n@@ -635,16 +635,50 @@\n  Roupa()\n+  # Cria um objeto da classe Roupa\n %0A%0A    pr\n@@ -910,16 +910,59 @@\n e True: \n+ # Loop infinito at%C3%A9 o usu%C3%A1rio decidir sair\n %0A       \n@@ -1008,16 +1008,43 @@\n .strip()\n+  # L%C3%AA o comando do usu%C3%A1rio\n %0A%0A      \n@@ -1066,16 +1066,43 @@\n  %22show%22:\n+  # Se o comando for 'show'\n %0A       \n@@ -1140,16 +1140,41 @@\n amanho()\n+  # Obt%C3%A9m o tamanho atual\n %0A       \n@@ -1235,16 +1235,50 @@\n ze: ()%22)\n+  # Se n%C3%A3o houver tamanho definido\n %0A       \n@@ -1337,16 +1337,42 @@\n tual%7D)%22)\n+  # Mostra o tamanho atual\n %0A%0A      \n@@ -1406,16 +1406,52 @@\n size %22):\n+  # Se o comando come%C3%A7ar com 'size '\n %0A       \n@@ -1486,16 +1486,45 @@\n %22 %22, 1) \n+ # Divide o comando em partes\n %0A       \n@@ -1548,16 +1548,49 @@\n s) == 2:\n+  # Se houver um tamanho definido\n %0A       \n@@ -1615,16 +1615,34 @@\n artes%5B1%5D\n+  # Pega o tamanho\n %0A       \n@@ -1673,16 +1673,43 @@\n o(valor)\n+  # Tenta definir o tamanho\n %0A       \n@@ -1784,16 +1784,36 @@\n ze M).%22)\n+  # Mensagem de erro\n %0A%0A      \n@@ -1840,117 +1840,393 @@\n nd%22:\n-%0A            break%0A%0A        else:%0A            print(%22Comando inv%C3%A1lido. Tente 'show', 'size %3Ctamanho%3E' ou 'end'.%22)\n+  # Se o comando for 'end'%0A            print(%22Saindo do programa. At%C3%A9 logo!%22)  # Mensagem de sa%C3%ADda%0A            break  # Sai do loop%0A%0A        else:  # Para qualquer outro comando inv%C3%A1lido%0A            print(%22Comando inv%C3%A1lido. Tente 'show', 'size %3Ctamanho%3E' ou 'end'.%22)  # Mensagem de erro%0A%0A# Executa a fun%C3%A7%C3%A3o main se o arquivo for executado diretamente%0Aif __name__ == %22__main__%22:%0A    main()%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-21_15-44-44",
+            "content": "@@ -122,24 +122,16 @@\n tamanho%0A\n-        \n %0A    def\n@@ -201,17 +201,16 @@\n %22M%22, %22G%22\n- \n , %22GG%22, \n@@ -251,16 +251,78 @@\n = valor%0A\n+            print(f%22Tamanho definido como: %7Bself.__tamanho%7D%22)%0A\n         \n@@ -352,17 +352,17 @@\n (%22fail: \n-v\n+V\n alor inv\n@@ -428,24 +428,247 @@\n  = Roupa()%0A%0A\n+    print(%22Bem-vindo ao simulador de Roupa!%22)%0A    print(%22Digite 'show' para ver o tamanho atual.%22)%0A    print(%22Digite 'size %3Ctamanho%3E' para definir o tamanho (ex: size M).%22)%0A    print(%22Digite 'end' para sair do programa.%22)%0A%0A\n     while Tr\n@@ -670,16 +670,17 @@\n le True:\n+ \n %0A       \n@@ -696,16 +696,45 @@\n = input(\n+%22Digite um comando: %22).strip(\n )%0A%0A     \n@@ -1028,16 +1028,17 @@\n (%22 %22, 1)\n+ \n %0A       \n@@ -1141,53 +1141,232 @@\n or)%0A\n-%0A        elif comando == %22end%22:%0A            break\n+            else:%0A                print(%22Erro: Use 'size %3Ctamanho%3E' (ex: size M).%22)%0A%0A        elif comando == %22end%22:%0A            break%0A%0A        else:%0A            print(%22Comando inv%C3%A1lido. Tente 'show', 'size %3Ctamanho%3E' ou 'end'.%22)\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-21_15-59-29",
+            "content": "@@ -883,12 +883,4 @@\n reak\n-%0A%0Amain()\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-21_16-00-15",
+            "content": "@@ -383,83 +383,8 @@\n ()%0A%0A\n-    print(%22$show%22)%0A%0A%0A#ENTENDI ERRADO %0A'''%0Adef main():%0A    roupa = Roupa()%0A%0A\n     \n@@ -891,8 +891,4 @@\n in()\n-%0A'''\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-21_16-04-13",
+            "content": "@@ -403,16 +403,8 @@\n %22)%0A%0A\n-main()%0A%0A\n %0A#EN\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-21_16-04-24",
+            "content": "@@ -401,30 +401,8 @@\n ow%22)\n-%0A    print(%22size:%C2%B7()%22)\n %0A%0Ama\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-21_16-05-04",
+            "content": "@@ -414,16 +414,17 @@\n t(%22size:\n+%C2%B7\n ()%22)%0A%0Ama\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-21_16-05-14",
+            "content": "@@ -418,9 +418,8 @@\n ize:\n-%C2%B7\n ()%22)\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-21_16-05-25",
+            "content": "@@ -379,16 +379,145 @@\n oupa()%0A%0A\n+    print(%22$show%22)%0A    print(%22size:%C2%B7()%22)%0A%0Amain()%0A%0A%0A#ENTENDI ERRADO %0A'''%0Adef main():%0A    roupa = Roupa()%0A%0A    while True:%0A        \n comando \n@@ -527,16 +527,24 @@\n nput()%0A%0A\n+        \n if coman\n@@ -565,29 +565,435 @@\n     \n-print(%22size: ()%22)\n+        tamanho_atual = roupa.getTamanho()%0A            if tamanho_atual == %22%22:%0A                print(%22size: ()%22)%0A            else:%0A                print(f%22size: (%7Btamanho_atual%7D)%22)%0A%0A        elif comando.startswith(%22size %22):%0A            partes = comando.split(%22 %22, 1)%0A            if len(partes) == 2:%0A                valor = partes%5B1%5D%0A                roupa.setTamanho(valor)%0A%0A        elif comando == %22end%22:%0A            break\n %0A%0Amain()\n@@ -984,16 +984,20 @@\n    break%0A%0Amain()\n+%0A'''\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-21_16-07-41",
+            "content": "@@ -436,16 +436,17 @@\n t(%22size:\n+ \n ()%22)%0A%0Ama\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-21_16-07-58",
+            "content": "@@ -436,17 +436,18 @@\n t(%22size:\n- \n+()\n %22)%0A%0Amain\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-21_16-08-04",
+            "content": "@@ -440,11 +440,10 @@\n ize:\n+ \n %22\n-()\n )%0A%0Am\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-21_16-08-12",
+            "content": "@@ -383,32 +383,8 @@\n ()%0A%0A\n-    while True:%0A        \n coma\n@@ -398,24 +398,16 @@\n nput()%0A%0A\n-        \n if coman\n@@ -428,431 +428,24 @@\n     \n-        tamanho_atual = roupa.getTamanho()%0A            if tamanho_atual == %22%22:%0A                print(%22size: ()%22)%0A            else:%0A                print(f%22size: (%7Btamanho_atual%7D)%22)%0A%0A        elif comando.startswith(%22size %22):%0A            partes = comando.split(%22 %22, 1)%0A            if len(partes) == 2:%0A                valor = partes%5B1%5D%0A                roupa.setTamanho(valor)%0A%0A        elif comando == %22end%22:%0A            break\n+print(%22size:%22())\n %0A%0Ama\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-21_16-10-24",
+            "content": "@@ -424,14 +424,8 @@\n ut()\n-.strip\n %0A%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-21_16-15-56",
+            "content": "@@ -426,18 +426,16 @@\n ().strip\n-()\n %0A%0A      \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-21_16-17-27",
+            "content": "@@ -893,39 +893,8 @@\n ak%0A%0A\n-if __name__ == %22__main__%22:%0A    \n main\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-21_16-22-36",
+            "content": "@@ -350,312 +350,8 @@\n %22)%0A%0A\n-%0A#TESTES, DEPOIS DE FAZER TUDO %22ERRADO%22%0A%0A#1 show%0Adef main()%0A    print(%22$show%22)%0A    tamanho_atual = roupa.getTamanho()  # Obt%C3%A9m o tamanho atual%0A    if tamanho_atual == %22%22:%0A        print(%22size: ()%22)  # Se n%C3%A3o houver tamanho definido%0A    else:%0A        print(f%22size: (%7Btamanho_atual%7D)%22)%0A%0A#ENTENDI ERRADO%0A'''%0A\n def \n@@ -893,14 +893,41 @@\n ak%0A%0A\n+if __name__ == %22__main__%22:%0A    \n main()\n-%0A'''\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-21_16-40-35",
+            "content": "@@ -405,38 +405,16 @@\n f main()\n-:%0A    roupa = Roupa()%0A\n %0A    pri\n@@ -459,24 +459,49 @@\n getTamanho()\n+  # Obt%C3%A9m o tamanho atual\n %0A    if tama\n@@ -538,24 +538,58 @@\n (%22size: ()%22)\n+  # Se n%C3%A3o houver tamanho definido\n %0A    else:%0A \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-21_16-41-09",
+            "content": "@@ -597,16 +597,8 @@\n %22)%0A%0A\n-main()%0A%0A\n #ENT\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-21_16-41-21",
+            "content": "@@ -446,16 +446,161 @@\n %22$show%22)\n+%0A    tamanho_atual = roupa.getTamanho()%0A    if tamanho_atual == %22%22:%0A        print(%22size: ()%22)%0A    else:%0A        print(f%22size: (%7Btamanho_atual%7D)%22)\n %0A%0Amain()\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-21_16-41-38",
+            "content": "@@ -450,30 +450,8 @@\n ow%22)\n-%0A    print(%22size: ()%22)\n %0A%0Ama\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-21_16-41-59",
+            "content": "@@ -455,145 +455,22 @@\n     \n-tamanho_atual = roupa.getTamanho()%0A    if tamanho_atual == %22%22:%0A        print(%22size: ()%22)%0A    else:%0A        print(f%22size: (%7Btamanho_atual%7D\n+print(%22size: (\n )%22)%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-21_16-48-23",
+            "content": "@@ -439,16 +439,17 @@\n  print(%22\n+$\n show%22)%0A \n@@ -597,31 +597,8 @@\n %22)%0A%0A\n-#2 F%0A%0Aprint(%22size F%22)%0A%0A\n main\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-21_16-55-06",
+            "content": "@@ -443,9 +443,8 @@\n nt(%22\n-$\n show\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-21_16-55-22",
+            "content": "@@ -599,20 +599,16 @@\n %0A%0A#2 F%0A%0A\n-    \n print(%22s\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-21_16-55-31",
+            "content": "@@ -610,17 +610,16 @@\n  print(%22\n-$\n size F%22)\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-21_16-55-40",
+            "content": "@@ -623,34 +623,8 @@\n  F%22)\n-%0A    roupa.setTamanho(%22F%22)\n %0A%0Ama\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-21_16-56-05",
+            "content": "@@ -303,9 +303,9 @@\n il: \n-V\n+v\n alor\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-21_16-56-16",
+            "content": "@@ -651,182 +651,8 @@\n %22)%0A%0A\n-#3 Show%0A%0A    print(%22$show%22)%0A    tamanho_atual = roupa.getTamanho()%0A    if tamanho_atual == %22%22:%0A        print(%22size: ()%22)%0A    else:%0A        print(f%22size: (%7Btamanho_atual%7D)%22)%0A%0A\n main\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-10-21_16-56-44",
+            "content": "@@ -825,65 +825,8 @@\n %22)%0A%0A\n-#4 PP%0A%0A    print(%22$size PP%22)%0A    roupa.setTamanho(%22PP%22)%0A%0A\n main\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-21_16-57-09",
+            "content": "@@ -882,214 +882,8 @@\n %22)%0A%0A\n-#5 show%0Adef main():%0A    roupa = Roupa()%0A%0A    print(%22$show%22)%0A    tamanho_atual = roupa.getTamanho()%0A    if tamanho_atual == %22%22:%0A        print(%22size: ()%22)%0A    else:%0A        print(f%22size: (%7Btamanho_atual%7D)%22)%0A%0A\n main\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-21_16-57-35",
+            "content": "@@ -885,16 +885,48 @@\n %0A#5 show\n+%0Adef main():%0A    roupa = Roupa()\n %0A%0A    pr\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-21_16-57-56",
+            "content": "@@ -1056,34 +1056,8 @@\n %22)%0A%0A\n-#6 end%0A    print(%22$end%22)%0A%0A\n main\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-21_16-58-24",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n        \n    def setTamanho(self, valor: str):\n        if valor in [\"PP\", \"P\", \"M\", \"G\" , \"GG\", \"XG\"]:\n            self.__tamanho = valor\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\n\n#TESTES, DEPOIS DE FAZER TUDO \"ERRADO\"\n\n#1 show\ndef main():\n    roupa = Roupa()\n\n    print(\"$show\")\n    tamanho_atual = roupa.getTamanho()\n    if tamanho_atual == \"\":\n        print(\"size: ()\")\n    else:\n        print(f\"size: ({tamanho_atual})\")\n\n#2 F\n\n    print(\"$size F\")\n    roupa.setTamanho(\"F\")\n\n#3 Show\n\n    print(\"$show\")\n    tamanho_atual = roupa.getTamanho()\n    if tamanho_atual == \"\":\n        print(\"size: ()\")\n    else:\n        print(f\"size: ({tamanho_atual})\")\n\n#4 PP\n\n    print(\"$size PP\")\n    roupa.setTamanho(\"PP\")\n\n#5 show\n\n    print(\"$show\")\n    tamanho_atual = roupa.getTamanho()\n    if tamanho_atual == \"\":\n        print(\"size: ()\")\n    else:\n        print(f\"size: ({tamanho_atual})\")\n\n#6 end\n    print(\"$end\")\n\nmain()\n\n#ENTENDI ERRADO\n'''\ndef main():\n    roupa = Roupa()\n\n    while True:\n        comando = input().strip()\n\n        if comando == \"show\":\n            tamanho_atual = roupa.getTamanho()\n            if tamanho_atual == \"\":\n                print(\"size: ()\")\n            else:\n                print(f\"size: ({tamanho_atual})\")\n\n        elif comando.startswith(\"size \"):\n            partes = comando.split(\" \", 1)\n            if len(partes) == 2:\n                valor = partes[1]\n                roupa.setTamanho(valor)\n\n        elif comando == \"end\":\n            break\n\nmain()\n'''",
+            "lines": "86"
+        }
+    ]
+}
